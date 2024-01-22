@@ -1,0 +1,110 @@
+.modalOverlay {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+}
+
+.modalBox {
+    position: relative;
+    width: 90%;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 400px;
+    max-height: 351px;
+    background: #fff;
+}
+
+.moduleClose {
+    display: flex;
+    background-color: var(--color-primary);
+    justify-content: space-between;
+    height: 3.5625rem;
+    width: 100%;
+    padding: 9px;
+
+    &>h2 {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-family: var(--font-primary);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    &>button {
+        color: #FFFFFF80;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.containerValue {
+    height: 121px;
+    margin: 15px;
+    border-top: 2px solid var(--gray-100);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.spanTotal {
+    font-family: var(--font-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.spanValue {
+    font-family: var(--font-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: var(--gray-300);
+}
+
+.btnClear {
+    width: 100%;
+    height: 3.75rem;
+    background-color: #BDBDBD;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+}
+
+.containerProduct {
+    height: 10rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &>ul {
+        display: flex;
+        flex-direction: column;
+        max-height: 10rem;
+        overflow-y: scroll;
+        overflow-y: auto;
+    }
+}
+
+@media (min-width:420px) {
+    .modalBox {
+        width: 484px;
+        height: 408px;
+    }
+
+}

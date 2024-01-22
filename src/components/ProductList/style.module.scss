@@ -1,0 +1,35 @@
+.section {
+    padding: 13px;
+    margin: 0 auto;
+    display: flex;
+
+    &>ul {
+        display: flex;
+        width: 100%;
+        overflow: auto;
+        gap: 1rem;
+        min-width: 90vw;
+    }
+}
+
+@media (min-width:420px) {
+    .section {
+        margin: 0 auto;
+        padding: 21px 118px 21px 118px;
+        width: 1368px;
+        max-width: 100%;
+        &>ul {
+            max-width: 100vw;
+            flex-wrap: wrap;
+            overflow: hidden;
+            gap: 29px;
+            padding-right: 118px;
+
+            &>li {
+                width: 300px;
+                max-width: 23%;
+                min-width: 250px;
+            }
+        }
+    }
+}
